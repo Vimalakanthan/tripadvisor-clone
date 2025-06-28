@@ -1,0 +1,1714 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: #ffffff;
+}
+
+
+/* Header */
+
+.header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px 0px;
+
+}
+
+.header__logo i {
+    display: none;
+}
+
+.header__logo img {
+    width: 188px;
+    cursor: pointer;
+}
+
+.header__navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+
+}
+
+.header__navbar ul li {
+    list-style-type: none;
+    font-size: 14.5px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.header__navbar ul li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+#forums {
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+#forums:hover {
+    font-size: 16px;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+    opacity: 0.7;
+}
+
+
+.header__signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.header__signin__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 8px 15px;
+
+
+}
+
+.header__signin__icon:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+.header__signin button {
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.inr {
+    color: black;
+    font-weight: 600;
+}
+
+.header__signin button:hover {
+    background-color: #333;
+
+}
+
+/* category */
+
+.category__title h1 {
+    text-align: center;
+    font-size: 54px;
+    margin-top: 48px;
+}
+
+.category__list ul {
+    margin: 32px 0px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.category__list ul li {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.category__list li:hover {
+    transition: all ease-in-out;
+    transform: translateY(-4px);
+
+    border-radius: 10px;
+    text-shadow: 0px 0px 20px rgba(33, 31, 31, 0.8);
+
+}
+
+/* Searchbar */
+
+.searchbar-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.28);
+    border: 2px solid rgb(212, 212, 212);
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px 5px 5px 15px;
+    cursor: pointer;
+}
+
+.searchbar input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.searchbar input::placeholder {
+    color: rgb(139, 139, 139);
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar__button {
+    border: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: #34e0a1;
+    border-radius: 24px;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.searchbar__button:hover {
+    background-color: #34e0a1c5;
+}
+
+
+/* Achievements Banner */
+
+.achievements {
+
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.achievements img {
+    width: 83%;
+    border-radius: 20px;
+
+}
+
+.achievements__content {
+    position: absolute;
+    padding: 20px;
+    left: 10%;
+    bottom: 2%;
+}
+
+.achievements__content h1 {
+    font-size: 40px;
+    color: white;
+
+}
+
+.achievements__content p {
+
+    font-size: 20px;
+    color: white;
+}
+
+.achievements__button {
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 24px;
+    padding: 14px 24px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.achievements__button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+/* Treat Yourself Card */
+.treat {
+    margin: 60px 60px;
+    padding: 0px 24px;
+}
+
+.treat__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.treat__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.treat__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.treat__content {
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+.treat__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+.treat__content img {
+    width: 320px;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.treat__content img:hover {
+    opacity: 0.8;
+
+
+}
+
+.treat__content:hover {
+    transform: translateY(-4px);
+}
+
+
+.treat__content__title {
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.85);
+
+}
+
+.treat__content__arrow {
+    position: relative;
+}
+
+#arrow1 {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    bottom: 40%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#arrow1:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* To Do Things */
+
+.to-do {
+    margin: 80px 60px;
+    padding: 0px 24px;
+}
+
+.to-do__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.to-do__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.to-do__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    gap: 10px;
+
+}
+
+.to-do__content {
+
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+
+.to-do__content img {
+    width: 368px;
+    height: 233px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.to-do__content p {
+
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    cursor: pointer;
+    padding-right: 20px;
+
+
+}
+
+
+.to-do__content i {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.to-do__content img:hover {
+    opacity: 0.8;
+}
+
+.to-do__content__arrow {
+    position: relative;
+}
+
+#arrow2 {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    bottom: 40%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#arrow2:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* Kodaikanal Card */
+.kodai {
+    margin: 60px 60px;
+    padding: 0px 24px;
+}
+
+.kodai__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.kodai__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.kodai__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.kodai__content {
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+
+}
+
+.kodai__content img {
+    width: 300px;
+    height: 272px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.kodai__content img:hover {
+    opacity: 0.8;
+}
+
+.kodai__content__title {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.green__circle_list {
+    display: flex;
+    gap: 2px;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.green__circle_list i {
+    font-size: 12px;
+}
+
+.kodai__content__para {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.kodai__content .fa-heart {
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.kodai__content .fa-heart:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.kodai__content__arrow {
+    position: relative;
+
+}
+
+#arrowkodai {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    bottom: 55%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#arrowkodai:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Inspiration */
+.inspiration__wrapper {
+    padding: 5px 0px;
+    background-color: #f2f1ec;
+}
+
+.inspiration {
+    margin: 40px 60px;
+    padding: 0px 24px;
+}
+
+.inspiration__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.inspiration__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.inspiration__content {
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+
+}
+
+.inspiration__content img {
+    width: 368px;
+    height: 233px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.inspiration__content p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.inspiration__content p:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.inspiration__content i {
+    padding-top: 10px;
+}
+
+.inspiration__content img:hover {
+    opacity: 0.8;
+}
+
+.inspiration__content__arrow {
+    position: relative;
+}
+
+#arrow3 {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    bottom: 40%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#arrow3:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Dream Card */
+
+#dream__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#dream__subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Bike banner */
+
+.bike-banner__wrapper {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bike-banner {
+    padding: 30px 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #F2ECF9;
+
+}
+
+.bike-banner__img {
+    width: 50%;
+}
+
+.bike-banner__img img {
+    width: 536px;
+}
+
+.bike-banner__content {
+    width: 50%;
+    text-align: center;
+}
+
+.sponsor {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor img {
+    width: 24px;
+}
+
+.sponsor span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sponsor span:hover {
+    color: #333;
+}
+
+
+.bike-banner__content__title {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.bike-banner__content__btn {
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bike-banner__content__btn:hover {
+    background-color: #333;
+}
+
+
+
+/* Home Rental Card */
+.rental__wrapper {
+    padding: 5px 0px;
+}
+
+.rental {
+    margin: 80px 60px;
+    padding: 0px 24px;
+}
+
+.rental__title {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.rental h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000000;
+    display: none;
+}
+
+.rental__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.rental__content {
+    text-align: left;
+    flex-grow: 1;
+    flex-basis: 5%;
+    position: relative;
+
+
+}
+
+.rental__content img {
+    width: 271px;
+    height: 233px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.rental__content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+}
+
+.rental__content h4 {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.rental__content p {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.rental__content p:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.rental__content i {
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.rental__content img:hover {
+    opacity: 0.8;
+}
+
+.rental__content__arrow {
+    position: relative;
+}
+
+#arrowrental {
+    position: absolute;
+    z-index: 1;
+    right: -6%;
+    bottom: 50%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#arrowrental:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Final Banner */
+
+.banner2 {
+    height: 600px;
+    width: 100%;
+    background-image: url("./img/tc_cards_2024_c04.png");
+    background-position: right 90px top 0px;
+    background-repeat: no-repeat;
+    background-size: 680px auto;
+    background-color: #fff7e1;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner2__content {
+    width: 455px;
+    padding-left: 10%;
+}
+
+.banner2__content h1 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.banner2__content p {
+    font-size: 24px;
+}
+
+.banner2__content button {
+
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+}
+
+.banner2__content button:hover {
+    background-color: #333;
+}
+
+.banner2__mobimg {
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+
+    background-color: #f2f2f2;
+}
+
+.footer__row1 {
+    margin: 80px 80px 0px 80px;
+    padding: 50px 24px 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.footer__row1__s1 h4,
+.footer__row1__s2 h4,
+.footer__row1__s3 h4,
+.footer__row1__s4 h4 {
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__row1__s1 ul li,
+.footer__row1__s2 ul li,
+.footer__row1__s3 ul li,
+.footer__row1__s4 ul li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.footer__row1__s1 ul li:hover,
+.footer__row1__s2 ul li:hover,
+.footer__row1__s3 ul li:hover,
+.footer__row1__s4 ul:hover {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.footer__row2 {
+    margin: 0px 80px;
+    padding: 15px 24px 30px 24px;
+    display: flex;
+    align-self: flex-end;
+}
+
+#footer__desc {
+    font-family: 12px !important;
+}
+
+.footer__row2__col1__s1 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.footer__row2__col1__s1 img {
+    width: 40px;
+}
+
+.footer__row2__col1__s1__content ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__row2__col1__s1__content ul li {
+    color: #333;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer__row2__col1__s1__content ul li:hover {
+    color: #585858;
+}
+
+.footer__row2__col1__s1__content p {
+    font-size: 12px;
+}
+
+.footer__row2__col2 {
+    width: 30%;
+}
+
+select {
+    background-color: white;
+    width: 140px;
+    margin-left: 20px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    cursor: pointer;
+
+}
+
+select:hover {
+    background-color: #f2f2f2;
+}
+
+select:focus {
+    outline: none;
+}
+
+.social-links {
+    cursor: pointer;
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.social-links i:hover {
+    color: #333;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* Header */
+    .header__logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .header__logo i {
+        display: block;
+    }
+
+    .header__navbar,
+    .header__signin {
+        display: none;
+    }
+
+
+    /* category List */
+    .category__title h1 {
+        display: none;
+    }
+
+    .category__list {
+        margin-top: 30px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-left: 30px;
+    }
+
+    .category__list ul {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .category__list ul li {
+
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    /* Searchbar */
+
+    .searchbar-wrapper {
+        margin-top: 30px;
+    }
+
+    .searchbar {
+        width: 90%;
+
+    }
+
+    /* Achivememnt Img banner  */
+    .achievements img {
+        width: 90%;
+    }
+
+    .achievements__content {
+        position: absolute;
+        padding: 20px;
+        left: 5%;
+        bottom: 2%;
+    }
+
+    .achievements__content h1 {
+        font-size: 20px;
+    }
+
+    .achievements__content p {
+
+        font-size: 14px;
+        color: white;
+    }
+
+    .achievements__button {
+        font-size: 14px;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+    /* Treat Yourself Card */
+    .treat {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    #arrow1 {
+        display: none;
+    }
+
+    .treat__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 0;
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .treat__content {
+        flex: 0 0 auto;
+    }
+
+    .treat__card {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .treat__content__title {
+        font-size: 22px;
+    }
+
+
+    /* To Do Things */
+    .to-do {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .to-do__card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+        text-align: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+    }
+
+    #arrow2 {
+        display: none;
+    }
+
+    /* Kodaikanal Card */
+    .kodai {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .kodai__card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+        text-align: left;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .kodai__content__title {
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 16px;
+    }
+
+    .kodai__content .fa-heart {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #arrowkodai {
+        display: none;
+    }
+
+    /* Inspiration */
+
+    .inspiration {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .inspiration__card {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    #arrow3 {
+        display: none;
+    }
+
+
+    /* Bike banner */
+    .bike-banner__wrapper {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .bike-banner__img {
+        width: 100%;
+    }
+
+    .bike-banner {
+        width: 90%;
+        padding: 20px 20px;
+        flex-direction: row;
+    }
+
+    .bike-banner__img img {
+        width: 364px;
+    }
+
+    .bike-banner__content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .sponsor {
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .bike-banner__content__btn {
+        margin-top: 15px;
+    }
+
+    /* Home Rental Card */
+    .rental {
+        margin: 40px 10px;
+        padding: 10px;
+    }
+
+    .rental__card {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .rental__content h3 {
+        display: none;
+    }
+
+    .rental h5 {
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    #arrowrental {
+        display: none;
+    }
+
+
+    /* Final Banner */
+
+    .banner2 {
+        height: fit-content;
+        width: 100%;
+        overflow: hidden;
+        background-image: none;
+        background-color: #fff7e1;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .banner2__mobimg {
+        display: block;
+    }
+
+    /* .banner2__mobimg img 
+{
+    width: 412px;
+} */
+    .banner2__content {
+        padding-top: 30px;
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    .banner2__content h1 {
+        font-size: 50px;
+        word-wrap: break-word;
+    }
+
+    .banner2__content p {
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+    .banner2__content img {
+        width: 70px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        display: block;
+    }
+
+    .footer__row1 {
+        margin: 80px 0px 0px 0px;
+        padding: 40px 30px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer__row2 {
+        margin: 0px 0px;
+        padding: 0px 20px 40px 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-self: flex-end;
+    }
+
+    select {
+        margin-left: 0px;
+    }
+
+    .social-links {
+        justify-content: left;
+        gap: 15px;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    /* Header */
+    .header__logo {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header__logo i {
+        display: block;
+    }
+
+    .header__navbar,
+    .header__signin {
+        display: none;
+    }
+
+
+    /* category List */
+    .category__title h1 {
+        display: none;
+    }
+
+    .category__list {
+        margin-top: 30px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-left: 30px;
+    }
+
+    .category__list ul {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .category__list ul li {
+
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    /* Searchbar */
+
+    .searchbar-wrapper {
+        margin-top: 30px;
+    }
+
+    .searchbar {
+        width: 90%;
+
+    }
+
+    /* Achivememnt Img banner  */
+    .achievements img {
+        width: 90%;
+    }
+
+    .achievements__content {
+        position: absolute;
+        padding: 20px;
+        left: 5%;
+        bottom: 2%;
+    }
+
+    .achievements__content h1 {
+        font-size: 20px;
+    }
+
+    .achievements__content p {
+
+        font-size: 14px;
+        color: white;
+    }
+
+    .achievements__button {
+        font-size: 14px;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+    /* Treat Yourself Card */
+    .treat {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    #arrow1 {
+        display: none;
+    }
+
+    .treat__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 0;
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .treat__content {
+        flex: 0 0 auto;
+    }
+
+    .treat__card {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .treat__content__title {
+        font-size: 22px;
+    }
+
+
+    /* To Do Things */
+    .to-do {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .to-do__card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+        text-align: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+    }
+
+    #arrow2 {
+        display: none;
+    }
+
+    /* Kodaikanal Card */
+    .kodai {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .kodai__card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+        text-align: left;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .kodai__content__title {
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 16px;
+    }
+
+    .kodai__content .fa-heart {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #arrowkodai {
+        display: none;
+    }
+
+    /* Inspiration */
+
+    .inspiration {
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .inspiration__card {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    #arrow3 {
+        display: none;
+    }
+
+
+    /* Bike banner */
+    .bike-banner__wrapper {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .bike-banner__img {
+        width: 100%;
+    }
+
+    .bike-banner {
+        width: 90%;
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+    .bike-banner__img img {
+        width: 364px;
+    }
+
+    .bike-banner__content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .sponsor {
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .bike-banner__content__btn {
+        margin-top: 15px;
+    }
+
+    /* Home Rental Card */
+    .rental {
+        margin: 40px 10px;
+        padding: 10px;
+    }
+
+    .rental__card {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .rental__content h3 {
+        display: none;
+    }
+
+    .rental h5 {
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    #arrowrental {
+        display: none;
+    }
+
+
+
+
+    .banner2 {
+        height: fit-content;
+        width: 100%;
+        overflow: hidden;
+        background-image: none;
+        background-color: #fff7e1;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .banner2__mobimg {
+        display: block;
+    }
+
+    .banner2__mobimg img {
+        width: 412px;
+    }
+
+    .banner2__content {
+        padding-top: 30px;
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    .banner2__content h1 {
+        font-size: 40px;
+        word-wrap: break-word;
+    }
+
+    .banner2__content p {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+
+    .banner2__content img {
+        width: 70px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__row1 {
+        margin: 80px 0px 0px 0px;
+        padding: 40px 30px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer__row2 {
+        margin: 0px 0px;
+        padding: 0px 20px 40px 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-self: flex-end;
+    }
+
+    select {
+        margin-left: 0px;
+    }
+
+    .social-links {
+        justify-content: left;
+        gap: 15px;
+    }
+
+}
