@@ -11,13 +11,21 @@ body {
 
 
 /* Header */
-
+.header-wrapper{
+ position: sticky;
+  top: 0;
+  padding-bottom: 10px;
+  background-color: white; 
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .header {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px 0px 0px;
+   
 
 }
 
@@ -216,57 +224,80 @@ body {
     background-color: #34e0a1c5;
 }
 
-
-/* Achievements Banner */
-
-.achievements {
-
-    margin-top: 60px;
+/* Add Section */
+.add {
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    margin-top: 60px;
 }
 
-.achievements img {
-    width: 83%;
-    border-radius: 20px;
-
-}
-
-.achievements__content {
-    position: absolute;
+.add__container {
+    width: 80%;
+    height: auto;
+    background-color: #f55252;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
     padding: 20px;
-    left: 10%;
-    bottom: 2%;
 }
 
-.achievements__content h1 {
-    font-size: 40px;
-    color: white;
-
+.add__container__s1 {
+    width: 45%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.achievements__content p {
-
-    font-size: 20px;
-    color: white;
+.add__container__s1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
-.achievements__button {
-    cursor: pointer;
+.vertical-line {
+    width: 1px;
+    background-color: #000;
+    height: auto;
+    align-self: stretch;
+}
+
+.add__container__s2 {
+    width: 45%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add__container__s2 h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.add__container__s2 p {
     font-size: 16px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 24px;
-    padding: 14px 24px;
-    margin-top: 20px;
-    font-weight: 500;
+    color: #111;
 }
 
-.achievements__button:hover {
-    background-color: rgb(240, 240, 240);
+.add__container__s2 button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    width: fit-content;
 }
+
 
 /* Treat Yourself Card */
 .treat {
@@ -668,7 +699,7 @@ body {
     color: black;
 }
 
-/* Bike banner */
+/* Bike Trip */
 
 .bike-banner__wrapper {
     margin-top: 60px;
@@ -743,6 +774,7 @@ body {
 .bike-banner__content__btn:hover {
     background-color: #333;
 }
+
 
 
 
@@ -1084,33 +1116,8 @@ select:focus {
 
     }
 
-    /* Achivememnt Img banner  */
-    .achievements img {
-        width: 90%;
-    }
 
-    .achievements__content {
-        position: absolute;
-        padding: 20px;
-        left: 5%;
-        bottom: 2%;
-    }
 
-    .achievements__content h1 {
-        font-size: 20px;
-    }
-
-    .achievements__content p {
-
-        font-size: 14px;
-        color: white;
-    }
-
-    .achievements__button {
-        font-size: 14px;
-        padding: 10px 20px;
-        font-weight: 500;
-    }
 
     /* Treat Yourself Card */
     .treat {
@@ -1310,10 +1317,7 @@ select:focus {
         display: block;
     }
 
-    /* .banner2__mobimg img 
-{
-    width: 412px;
-} */
+
     .banner2__content {
         padding-top: 30px;
         padding-left: 0%;
@@ -1429,33 +1433,32 @@ select:focus {
 
     }
 
-    /* Achivememnt Img banner  */
-    .achievements img {
-        width: 90%;
+    /* Add Section */
+    .add {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .achievements__content {
-        position: absolute;
-        padding: 20px;
-        left: 5%;
-        bottom: 2%;
+    .add__container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .achievements__content h1 {
-        font-size: 20px;
+    .add__container__s1 {
+        width: 100%;
     }
 
-    .achievements__content p {
-
-        font-size: 14px;
-        color: white;
+    .vertical-line {
+        display: none;
     }
 
-    .achievements__button {
-        font-size: 14px;
-        padding: 10px 20px;
-        font-weight: 500;
+    .add__container__s2 {
+        text-align: center;
+        width: 100%;
     }
+
+
 
     /* Treat Yourself Card */
     .treat {
